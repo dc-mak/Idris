@@ -1,2 +1,5 @@
 *.ibc
 *.o
+*.idr~
+
+tdd-ex/TDD/
