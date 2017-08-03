@@ -1,9 +1,5 @@
 import Data.Vect
 
--- word_lengths : List String -> List Nat
--- word_lengths [] = []
--- word_lengths (word :: words) = length word :: word_lengths words
-
 xor : Bool -> Bool -> Bool
 xor False y = y
 xor True y = not y
@@ -18,7 +14,7 @@ mutual
   isOdd (S k) = isEven k
 
 word_lengths : Vect len String -> Vect len Nat
-word_lengths [] xs = []
+word_lengths [] = []
 word_lengths (word :: words) = length word :: word_lengths words
 
 insert : Ord elem => (x : elem) -> (xs_sorted : Vect k elem) -> Vect (S k) elem

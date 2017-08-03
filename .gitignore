@@ -1,5 +1,8 @@
 *.ibc
 *.o
 *.idr~
+*.pdf
 
 tdd-ex/TDD/
+idris-internals/
+parsers/
